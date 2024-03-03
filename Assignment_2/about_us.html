@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+      }
+        .background-color {
+  align-self: stretch;
+  height: 928px;
+  
+  position: relative;
+  display: none;
+}
+* {padding: 0; margin: 0;}
+
+.flex-container  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+      background: #c1cfd4;
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(89, 5, 9);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+.navigation  {
+  display: flex;
+}
+
+.nav{
+  text-align: center;
+}
+.nav-list{
+  justify-content: space-between;
+
+}
+.rightnav{
+  justify-content: space-between;
+  display: flex;
+  margin: 20px;
+}
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+    background: #bfc4c6;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
+  
+  .navigation {
+    flex-direction: rows;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.aboutus{
+    width: 100%;
+    position: absolute;
+    top:190px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.paragraph{
+  width: 100%;
+    position: absolute;
+    top: 350px;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>
+</head>
+<body>
+  
+ <nav>
+
+  <div class="flex-container">
+      <h1 class="logo"><a href="#">Skill Xchange</a></h1>
+      <ul class="nav-list">
+      <div class="rightnav">
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/index.html">Home   </a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/about_us.html">  About Us</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="Services">  Our Services</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/circulum.html">   Circulum</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/contact.html">Contact us</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/login.html">  Login</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/signup.html">  Sign up</a></li>
+      </ul>
+      <div class="nav">
+        <input type="text"
+               name="search"
+               id="search">
+        <button class="botton">Search Skills</button>
+    </div>
+    
+      </div>
+  </nav>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoc5Hk0rNtrQHIljlu7UajCp5yM32G2dW1w&usqp=CAU" alt="wallpaper" width="1600" height="stretch">
+  <div class="aboutus">
+    <h1 style="color: #741010; text-align: center;">About Us</h1>
+    </div>
+    <br><br><br><br>
+    <div class="paragraph">
+    <pre style="color: black;text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>From the idea . . .
+      We are firmly convinced that each of us has a talent, a skill or a special knowledge that can be of great value and benefit to others. 
+      Sharing with someone creates joy and giving makes one happy. 
+      It is not about money or about generating a profit, but about the appreciation received by giving your time and skill for the benefit of other people. 
+      So would it not be exciting to bring the potential of our skills together and to create a transparent and interesting offer? A pool of talents, which can be exchanged for mutual assistance?
+      Everyone knows someone who knows someone who might help someone with something and that is of value to that person. Usually it is limited to family, friends or neighbourhood circles. 
+      It is a natural progression in this technological age to evolve this into an online market place of our collective skills and talents - and this in an easy, free and fun way.
+      This conviction is the fundament on which the idea of skillharbour was created.
+     </b> </pre>
+  </div>
+ 
+</body>
+</html>

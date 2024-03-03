@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+      }
+        .background-color {
+  align-self: stretch;
+  height: 928px;
+  
+  position: relative;
+  display: none;
+}
+* {padding: 0; margin: 0;}
+
+.flex-container  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+      background: #c1cfd4;
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(89, 5, 9);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+.navigation  {
+  display: flex;
+}
+
+.nav{
+  text-align: center;
+}
+.nav-list{
+  justify-content: space-between;
+
+}
+.rightnav{
+  justify-content: space-between;
+  display: flex;
+  margin: 20px;
+}
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+    background: #bfc4c6;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
+  
+  .navigation {
+    flex-direction: rows;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.home{
+  width: 100%;
+    position: absolute;
+    top:150px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.home h2{
+  width: 100%;
+    position: absolute;
+    top:20px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.item-1{
+  width: 100%;
+    position: absolute;
+    top:150px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.item-2{
+  width: 100%;
+    position: absolute;
+    top:150px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.item-3{
+  width: 100%;
+    position: absolute;
+    top:150px;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+.item-4{
+  width: 100%;
+    position: absolute;
+    top:350px;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+.item-5{
+  width: 100%;
+    position: absolute;
+    top:350px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.item-6{
+  width: 100%;
+    position: absolute;
+    top:350px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.item-7{
+  width: 100%;
+    position: absolute;
+    top:550px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.item-8{
+  width: 100%;
+    position: absolute;
+    top:550px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.item-9{
+  width: 100%;
+    position: absolute;
+    top:550px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+ <nav>
+  <div class="flex-container">
+      <h1 class="logo"><a href="#">Skill Xchange</a></h1>
+      <ul class="nav-list">
+      <div class="rightnav">
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/index.html">Home   </a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="">  About Us</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="Services">  Our Services</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="">   Circulum</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/contact.html">Contact us</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/login.html">  Login</a></li>
+          &nbsp &nbsp &nbsp &nbsp
+
+          <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/signup.html">  Sign up</a></li>
+      </ul>
+      <div class="nav">
+        <input type="text"
+               name="search"
+               id="search">
+        <button class="botton">Search Skills</button>
+      </div>
+    </div>
+
+    </nav>
+    
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoc5Hk0rNtrQHIljlu7UajCp5yM32G2dW1w&usqp=CAU" alt="wallpaper" width="1600" height="745">
+     <div class="home">
+      <br> 
+      <br>
+      <h2 >Discover latest skills</h2>
+      <br>
+      <br>
+      <div class="item-1">
+      <pre style="text-align: left;font-family: Georgia, 'Times New Roman', Times, serif;">    
+               <button style="background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;"> Data analysis</b></a>
+        </button>
+      </div>
+      <div class="item-2">
+      <pre style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif;">           
+           <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="home2.html"> Copy<br>Writing </button></a>
+       </pre>
+      </div>
+<div class="item-3">
+  <pre style="text-align: right;font-family: Georgia, 'Times New Roman', Times, serif;"> <button style="background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;"> UX/UI Designer</b></a>
+</button>
+    </pre>
+</div>
+<div class="item-4">
+
+<pre style="text-align: left;font-family: Georgia, 'Times New Roman', Times, serif;">           
+              <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;"> Project Management</b></a>
+</button>
+ </pre>
+</div>
+<div class="item-5">
+<pre style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif;">           
+     <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;"></b> Content creation <br>and management</b></a>
+</button>
+ </pre>
+</div>
+<div class="item-6">
+
+<pre style="text-align: right;font-family: Georgia, 'Times New Roman', Times, serif;">  <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;"> Software Development</b></a>
+</button>
+ </pre>
+</div>
+<div class="item-7">
+  <pre style="text-align:left;font-family: Georgia, 'Times New Roman', Times, serif;"> 
+               <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;">Online Cooking</b></a>
+  </button>
+   </pre>
+</div>
+<div class="item-8">
+  <pre style="text-align:center;font-family: Georgia, 'Times New Roman', Times, serif;"> 
+    <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;">Image and <br>Video Editing</b></a>
+</button>
+</pre>
+</div>
+<div class="item-9">
+  <pre style="text-align:right;font-family: Georgia, 'Times New Roman', Times, serif;"> 
+    <button style="top: 111px; background-color: black; padding:30px 24px;text-align: center;"><a href="data analysis"> <b style="text-align: center;">Musical<br> Instrument</b></a>
+</button>
+</pre>
+
+</div>
+      </div>
+    </body>
+    </html>

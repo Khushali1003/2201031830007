@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+        .background-color {
+  align-self: stretch;
+  height: 928px;
+  
+  position: relative;
+  display: none;
+}
+* {padding: 0; margin: 0;}
+
+
+
+.flex-container  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+      background: #c1cfd4;
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(89, 5, 9);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+.navigation  {
+  display: flex;
+}
+
+.nav{
+  text-align: center;
+}
+.nav-list{
+  justify-content: space-between;
+
+}
+.rightnav{
+  justify-content: space-between;
+  display: flex;
+  margin: 20px;
+}
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+    background: #bfc4c6;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
+  
+  .navigation {
+    flex-direction: rows;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: blue;
+}
+.header h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.header p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+a:link{
+  color: aliceblue;
+}
+ </style>
+  </head>
+  <body>
+   <nav>
+    <div class="flex-container">
+        <h1 class="logo"><a href="#">Skill Xchange</a></h1>
+        <ul class="nav-list">
+        <div class="rightnav">
+            <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/index.html">Home   </a></li>
+            &nbsp &nbsp &nbsp &nbsp
+
+            <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/about_us.html">  About Us</a></li>
+            &nbsp &nbsp &nbsp &nbsp
+
+            <li><a href="Services">  Our Services</a></li>
+            &nbsp &nbsp &nbsp &nbsp
+
+            <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/circulum.html">   Circulum</a></li>
+            &nbsp &nbsp &nbsp &nbsp
+
+            <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/contact.html">Contact us</a></li>
+            &nbsp &nbsp &nbsp &nbsp
+
+            <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/login.html">  Login</a></li>
+            &nbsp &nbsp &nbsp &nbsp
+
+            <li><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/signup.html">  Sign up</a></li>
+        </ul>
+        <div class="nav">
+          <input type="text"
+                 name="search"
+                 id="search">
+          <button class="botton">Search Skills</button>
+      </div>
+      
+        </div>
+    </nav>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoc5Hk0rNtrQHIljlu7UajCp5yM32G2dW1w&usqp=CAU" alt="wallpaper" width="1600" height="745">
+
+    <div class="header">
+    <h1>Welcome to Skill Exchange</h1>
+    <p style="color: black;"><b>Exchange skills and knowledge within your community</b></p>
+    <h5>
+      <button style="border-radius:28px;margin: 20px; padding: 2px; background-color: blue;color: #c1cfd4;">
+    <p style="font-size:large;color: #afbcc2;"><a href="file:///C:/Users/Asus/Documents/GitHub/2201031830007/Assignment_2/getstarted.html"><b style="color: #c1cfd4;">Get Started</b></a></p>
+    
+    </button>
+     </h5>
+  </div>
+  </body>
+</html>
