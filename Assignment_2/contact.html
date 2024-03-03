@@ -98,207 +98,25 @@
     border-bottom: none;
   }
 }
-    .frame-a-child {
-  height: 90px;
-  width: 1440px;
-  position: relative;
-  background-color: var(--color-gainsboro);
-  display: none;
-  max-width: 100%;
-}
-.skill-xchange {
-  height: 60px;
-  position: relative;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  z-index: 1;
-}
-.home,
-.login,
-.span {
-  white-space: pre-wrap;
-}
-.home {
-  font-weight: 600;
-}
-.login,
-.span {
-  font-size: 14px;
-}
-.login {
-  font-size: 15px;
-  font-weight: 600;
-}
-.home-about-us-container1 {
-  width: 100%;
-}
-.home-about-us-container {
-  height: 32px;
-  width: 861px;
-  position: relative;
-  letter-spacing: 0.02em;
-  color: var(--color-black);
-  flex-shrink: 0;
-  max-width: 100%;
-  z-index: 1;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-khula);
-}
-.contact-us,
-.frame-a,
-.home-about-us-container {
-  display: flex;
-  align-items: center;
-}
-.frame-a {
-  align-self: stretch;
-  background-color: var(--color-gainsboro);
-  flex-direction: row;
-  justify-content: space-between;
-  padding: var(--padding-mini) 70px var(--padding-mini) 91px;
-  box-sizing: border-box;
-  top: 0;
-  z-index: 99;
-  position: sticky;
-  max-width: 100%;
-  gap: 20px;
-  text-align: center;
-  font-size: var(--font-size-21xl);
-  color: #ae1010;
-  font-family: var(--font-kokoro);
-}
-.contact-us {
-  height: 60px;
-  position: relative;
-  letter-spacing: 0.02em;
-  justify-content: center;
-}
-.please-send-your {
-  margin: 0;
-}
-.infoskillxchangecom2 {
-  text-decoration: underline;
-}
-.infoskillxchangecom1 {
-  color: inherit;
-}
-.blank-line,
-.infoskillxchangecom,
-.p,
-.p1,
-.well-get-back,
-.your-skill-xchange {
-  margin: 0;
-}
-.please-send-your-container1 {
-  width: 100%;
-}
-.please-send-your-container {
-  height: 285px;
-  width: 769px;
-  position: relative;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  max-width: 100%;
-}
-.info-text {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
-  max-width: 100%;
-  font-size: var(--font-size-xl);
-  color: var(--color-black);
-}
-.child-frame-d,
-.desktop-8,
-.parent-frame-c {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.child-frame-d {
-  flex: 1;
-  flex-direction: column;
-  gap: 196px 0;
-  max-width: 100%;
-}
-.desktop-8,
-.parent-frame-c {
-  box-sizing: border-box;
-}
-.parent-frame-c {
-  width: 1124px;
-  flex-direction: row;
-  padding: 0 61px;
-  max-width: 100%;
-  text-align: center;
-  font-size: var(--font-size-21xl);
-  color: #1869c8;
-  font-family: var(--font-kokoro);
-}
-.desktop-8 {
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-  overflow: hidden;
-  flex-direction: column;
-  padding: 0 0 347px;
-  gap: 46px 0;
-  letter-spacing: normal;
-}
-@media screen and (max-width: 1125px) {
-  .home-about-us-container {
-    display: none;
-  }
-  .parent-frame-c {
-    padding-left: var(--padding-11xl);
-    padding-right: var(--padding-11xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .contact-us {
-    font-size: 32px;
-  }
-  .child-frame-d {
-    gap: 196px 0;
-  }
-}
-@media screen and (max-width: 750px) {
-  .frame-a {
-    padding-left: 45px;
-    padding-right: 35px;
-    box-sizing: border-box;
-  }
-  .child-frame-d {
-    gap: 196px 0;
-  }
-  .desktop-8 {
-    gap: 46px 0;
-  }
-}
-@media screen and (max-width: 450px) {
-  .frame-a {
-    padding-left: 20px;
-    box-sizing: border-box;
-  }
-  .contact-us {
-    font-size: 54px;
-  }
-  .please-send-your-container {
-    font-size: 16px;
-  }
-  .child-frame-d {
-    gap: 196px 0;
-  }
-}
+    .contact-us{
+      width: 100%;
+    position: absolute;
+    top:190px;
+    transform: translateY(-50%);
+    text-align: center;
+    
+    }
+
+    .please-send-your{
+      width: 100%;
+    position: absolute;
+    top: 350px;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
 </style>
   </head>
   <body>
@@ -335,38 +153,17 @@
             </div>
             </div>
         </nav>
-      <section class="parent-frame-c">
-        <div class="child-frame-d">
-          <div class="contact-us">Contact us.</div>
-          <div class="info-text">
-            <div class="please-send-your-container">
-              <span class="please-send-your-container1">
-                <p class="please-send-your">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoc5Hk0rNtrQHIljlu7UajCp5yM32G2dW1w&usqp=CAU" alt="wallpaper" width="1600" height="745">
+           <h1 style="text-align: center;color: rgb(150, 15, 15);">
+          <div class="contact-us">Contact us.</div>          
+          </h1>
+                <p class="please-send-your"><b>
                   Please send your request or feedback to 
+                  <a href="mailto:info@skillharbour.com"
+                  target="_blank"> info@SkillXchange.com</a><br>
+                  We'll get back to you as soon as possible.<br>
+                  Your Skill Xchange Team
+                  </b>
                 </p>
-                <p class="infoskillxchangecom">
-                  <a
-                    class="infoskillxchangecom1"
-                    href="mailto:info@skillharbour.com"
-                    target="_blank"
-                  >
-                    <span class="infoskillxchangecom2"
-                      >info@SkillXchange.com</span
-                    >
-                  </a>
-                </p>
-                <p class="well-get-back">
-                  We'll get back to you as soon as possible.
-                </p>
-                <p class="your-skill-xchange">Your Skill Xchange Team  </p>
-                <p class="blank-line">&nbsp;</p>
-                <p class="p"> </p>
-                <p class="p1"> </p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
   </body>
 </html>
